@@ -10,6 +10,7 @@ import { SiExpressvpn } from "react-icons/si";
 import { BiLogoMongodb } from "react-icons/bi";
 import { SiMysql } from "react-icons/si";
 import { FaWindows } from "react-icons/fa6";
+import photoshop from "/src/assets/images/photoshop.png"
 
 const Skills = () => {
   return (
@@ -177,7 +178,7 @@ const Skills = () => {
                     <img src="./src/assets/images/github.png" alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
                     <img src="./src/assets/images/social.png" alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
                     <img src="./src/assets/images/microsoft.png" alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
-                    <img src="./src/assets/images/photoshop.png" alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
+                    <img src={photoshop} alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
                </div>
           </div>
     </div>
