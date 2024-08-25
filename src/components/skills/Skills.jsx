@@ -11,6 +11,11 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { SiMysql } from "react-icons/si";
 import { FaWindows } from "react-icons/fa6";
 import photoshop from "/src/assets/images/photoshop.png"
+import microsoft from "/src/assets/images/microsoft.png"
+import social from "/src/assets/images/social.png"
+import github from "/src/assets/images/github.png"
+import cpp from "/src/assets/images/c-.png"
+
 
 const Skills = () => {
   return (
@@ -174,10 +179,10 @@ const Skills = () => {
           <div className='w-full h-auto mt-16 '>
                  <h2 className='text-3xl font-extrabold  text-white text-center'>Other</h2>
              <div className='flex justify-center items-center mt-7'>
-                   <img src="./src/assets/images/c-.png" alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-50 rounded-lg' />
-                    <img src="./src/assets/images/github.png" alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
-                    <img src="./src/assets/images/social.png" alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
-                    <img src="./src/assets/images/microsoft.png" alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
+                   <img src={cpp} alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-50 rounded-lg' />
+                    <img src={github} alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
+                    <img src={social} alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
+                    <img src={microsoft}alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
                     <img src={photoshop} alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
                </div>
           </div>
