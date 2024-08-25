@@ -173,11 +173,11 @@ const Skills = () => {
           <div className='w-full h-auto mt-16 '>
                  <h2 className='text-3xl font-extrabold  text-white text-center'>Other</h2>
              <div className='flex justify-center items-center mt-7'>
-                   <img src="/src/assets/images/c-.png" alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-50 rounded-lg' />
-                    <img src="/src/assets/images/github.png" alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
-                    <img src="/src/assets/images/social.png" alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
-                    <img src="/src/assets/images/microsoft.png" alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
-                    <img src="/src/assets/images/photoshop.png" alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
+                   <img src="./src/assets/images/c-.png" alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-50 rounded-lg' />
+                    <img src="./src/assets/images/github.png" alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
+                    <img src="./src/assets/images/social.png" alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
+                    <img src="./src/assets/images/microsoft.png" alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
+                    <img src="./src/assets/images/photoshop.png" alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
                </div>
           </div>
     </div>

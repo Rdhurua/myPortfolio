@@ -28,7 +28,7 @@ const Home = () => {
          </div>
 
          <div className=" lg:w-[40%] lg:h-[70%]  border-3xl border-white   ml-4 mt-8 md:ml-[160px]  lg:mx-0 lg:mb-40  ">
-        <img className="md:w-full md:h-full sm:w-[70%] sm:h-[70%] lg:w-[80%] lg:h-auto  object-cover shadow-md shadow-gray-300 " src="/src/assets/images/r7.png" alt="Rinku" />
+        <img className="md:w-full md:h-full sm:w-[70%] sm:h-[70%] lg:w-[80%] lg:h-auto  object-cover shadow-md shadow-gray-300 " src="./src/assets/images/r7.png" alt="Rinku" />
       </div>
      </div>
     
