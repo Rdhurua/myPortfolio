@@ -5,7 +5,6 @@ import BaseProject from "./components/Project/BaseProject"
 import Skills from "./components/skills/Skills.jsx"
 import Contact from "./components/Contact/Contact.jsx"
 import Footer from "./components/footer/Footer.jsx"
-import Mail from "./components/Mail.jsx"
 import EmailForm from "/Mailnew.jsx"
 
 
@@ -22,8 +21,8 @@ function App() {
       <BaseProject />
       <Contact/>
       <Footer/>
-       {/* <Mail/> */}
-      {/* <EmailForm/> */}
+      
+      
 
 
     </>
