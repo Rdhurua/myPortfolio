@@ -7,9 +7,9 @@ const Home = () => {
      
   return (
     <>
-     <div className='sm:h-[160vh] md:h-[140vh] lg:h-[95vh] w-full  sm:flex sm:flex-column md:flex md:flex-wrap  lg:flex lg:flex-nowrap lg:justify-between lg:items-center   lg:px-16  ' id='home' >
+     <div className='sm:h-[160vh] md:h-[140vh] lg:h-[95vh] w-full  sm:flex sm:flex-column md:flex md:flex-wrap  lg:flex lg:flex-nowrap lg:justify-between lg:items-center   lg:px-16  py-12 ' id='home' >
         <div className=' sm:w-full sm:h-[37%] md:w-full md:h-[42%] md:mr-8 md:pt-3 lg:w-1/2 lg:h-1/2  sm:ml-12 lg:mb-52 lg:mx-8 lg:py-10 px-8 '>
-        <div >
+       <div>
         <h1 className=' md:text-4xl lg:text-5xl text-2xl text-gray-300 mb-2 font-mono font-bold'>Hello,Myself Rinku</h1>
                  <h1 className=' md:text-4xl lg:text-5xl text-2xl text-gray-300 mt-2 mb-2 font-mono font-bold'> I am a passionate</h1>
                  <h2> <span className='md:text-4xl lg:text-5xl text-2xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-700 via-orange-400 to-pink-500 mt-2'><Typewriter words={["Web-Developer","Problem-solver","Photo-editor"]} typeSpeed={100} loop /></span>

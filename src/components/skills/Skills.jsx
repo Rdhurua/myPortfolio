@@ -10,6 +10,7 @@ import { SiExpressvpn } from "react-icons/si";
 import { BiLogoMongodb } from "react-icons/bi";
 import { SiMysql } from "react-icons/si";
 import { FaWindows } from "react-icons/fa6";
+import { SiSocketdotio } from "react-icons/si";
 import photoshop from "/src/assets/images/photoshop.png"
 import microsoft from "/src/assets/images/microsoft.png"
 import social from "/src/assets/images/social.png"
@@ -19,7 +20,7 @@ import cpp from "/src/assets/images/c-.png"
 
 const Skills = () => {
   return (
-    <div id='Skills' className=' mb-16 '>
+    <div id='Skills' className=' mb-16 py-20 '>
       <h1 className='text-4xl font-extrabold text-gray-300 text-center mb-10 mt-16'>Skills</h1>
 
       < motion.div
@@ -104,7 +105,6 @@ const Skills = () => {
               </span>
             </div>
 
-         
           </div>
         </div>
 
@@ -112,7 +112,7 @@ const Skills = () => {
           <div className="py-12 font-titleFont flex flex-col gap-4">
             <h2 className="text-3xl md:text-4xl font-bold">Backend</h2>
           </div>
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-4 mb-8">
 
           <div className="overflow-x-hidden">
               <p className="text-md uppercase font-medium flex gap-3 items-center"><FaNodeJs  className='text-4xl text-lime-400' />Node Js</p>
@@ -158,6 +158,20 @@ const Skills = () => {
 
             <div className="overflow-x-hidden">
               <p className="text-md uppercase font-medium flex items-center gap-3"><SiMysql className='text-5xl text-blue-400' />MySql</p>
+              <span className="w-full h-2 bg-gray-700 rounded-md inline-flex mt-2">
+                <motion.span
+                  initial={{ x: "-100%", opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                  className="w-[70%] h-full bg-gradient-to-r from-blue-600 via-pink-500 to-red-500 rounded-md relative"
+                >
+                  <span className="absolute -top-7 right-0">70%</span>
+                </motion.span>
+              </span>
+            </div>
+
+            <div className="overflow-x-hidden">
+              <p className="text-md uppercase font-medium flex items-center gap-3"><SiSocketdotio className='text-5xl text-white'/>Socket.io</p>
               <span className="w-full h-2 bg-gray-700 rounded-md inline-flex mt-2">
                 <motion.span
                   initial={{ x: "-100%", opacity: 0 }}

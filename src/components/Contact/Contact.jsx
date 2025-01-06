@@ -45,8 +45,8 @@ const Contact = () => {
     };
 
     return (
-        <section className='mt-16 mb-8' id='contact'>
-            <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact me</h2>
+        <section className='mt-16 mb-8 py-20' id='contact'>
+            <h2 className="mb-8 text-4xl  font-extrabold text-gray-300 text-center">Contact me</h2>
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-sm shadow-md shadow-gray-200 rounded-md">
                 <form ref={form} onSubmit={onSubmit} className="space-y-8">
                     <div>

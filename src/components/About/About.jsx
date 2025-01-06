@@ -6,9 +6,9 @@ import AboutCard2 from './AboutCard2';
 
 const About = () => {
   return (
-    <div id='About'>
+    <div id='About' className='py-20'>
     
-    <h2 className='text-center text-4xl text-white font-extrabold sm:mt-28'>About</h2>
+    <h2 className='text-4xl font-extrabold text-gray-300 text-center mb-10 mt-16'>About</h2>
     
     <motion.div
       initial={{ opacity: 0 }}
@@ -24,7 +24,7 @@ const About = () => {
           <AboutCard
             title="B.tech in Ceramic Engineering"
             subTitle="National Institute of Technology ,Rourkela (2021 - 2025)"
-            result="6.73/10"
+            result="6.86/10"
             des="I'm a final-year Ceramic Engineering student with a strong passion for software development. My interest in the tech field drives me to explore and excel in software engineering."
           />
           <AboutCard
