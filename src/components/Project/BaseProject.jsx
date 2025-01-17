@@ -11,7 +11,7 @@ const BaseProject = () => {
   return (
     <section
     id="project"
-    className="w-full py-20 border-b-[1px] border-b-black"
+    className="w-full pt-20 border-b-[1px] border-b-black"
   >
     <div className="flex justify-center items-center text-center">
         <h1 className='text-4xl  font-extrabold text-gray-300 '>Projects</h1>
@@ -21,7 +21,7 @@ const BaseProject = () => {
         
         <p className='text-2xl  font-semibold text-gray-100 mb-20 mt-3'>following are my projects</p>
     </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-10 lg:px-16">
+    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-10 px-4 lg:px-16">
 
     <Project
         title="Skill-exchanger"

@@ -54,12 +54,7 @@ const About = () => {
             des="I completed a web development internship at Kshitiksha Foundation, where I gained hands-on experience in creating and optimizing websites. This experience deepened my skills and passion for the field."
              
           />
-          {/* <AboutCard2
-            title="Generative AI workshop"
-            subTitle="by Gaurav Thengre"
-            result="4.75/5"
-            des="Higher education is tertiary education leading to award of an academic degree. Higher education, also called post-secondary education."
-             className="hidden"/> */}
+          
             <AboutCard2
               title="Web Developer Workshop"
               subTitle=" Microsoft Student Ambassadors"

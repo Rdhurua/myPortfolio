@@ -20,16 +20,16 @@ import cpp from "/src/assets/images/c-.png"
 
 const Skills = () => {
   return (
-    <div id='Skills' className=' mb-16 py-20 '>
+    <div id='Skills' className=' mb-16 pt-20 '>
       <h1 className='text-4xl font-extrabold text-gray-300 text-center mb-10 mt-16'>Skills</h1>
 
       < motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 0.5 } }}
-        className="w-full flex flex-col lg:flex-row gap-10 lg:gap-20"
+        className="w-full flex flex-col lg:flex-row gap-10 px-4 md:px-0 lg:gap-20"
       >
           
-        <div className="w-full lg:w-1/2 md:px-20 px-4 lg:px-20 text-gray-300 shadow-2xl shadow-[#131928f1]">
+        <div className="w-full lg:w-1/2 md:px-20 px-4 lg:px-20 text-gray-300 shadow-2xl shadow-[#131928f1] ">
           <div className="py-12 font-titleFont flex flex-col gap-4">
             <h2 className="text-3xl md:text-4xl font-bold">Front-end</h2>
           </div>
@@ -193,11 +193,11 @@ const Skills = () => {
           <div className='w-full h-auto mt-16 '>
                  <h2 className='text-3xl font-extrabold  text-white text-center'>Other</h2>
              <div className='flex justify-center items-center mt-7'>
-                   <img src={cpp} alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-50 rounded-lg' />
-                    <img src={github} alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
-                    <img src={social} alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
-                    <img src={microsoft}alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
-                    <img src={photoshop} alt="github" className='h-10 md:h-16 ml-8 shadow-md shadow-yellow-100 rounded-lg' />
+                   <img src={cpp} alt="github" className='h-14 md:h-16 ml-4 shadow-md shadow-yellow-50 rounded-lg' />
+                    <img src={github} alt="github" className='h-14 md:h-16 ml-4 md:ml-8 shadow-md shadow-yellow-100 rounded-lg' />
+                    <img src={social} alt="github" className='h-14 md:h-16 ml-4 md:ml-8 shadow-md shadow-yellow-100 rounded-lg' />
+                    <img src={microsoft}alt="github" className='h-14 md:h-16 ml-4 md:ml-8 shadow-md shadow-yellow-100 rounded-lg' />
+                    <img src={photoshop} alt="github" className='h-14 md:h-16 ml-4 md:ml-8 shadow-md shadow-yellow-100 rounded-lg' />
                </div>
           </div>
     </div>
