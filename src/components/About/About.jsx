@@ -6,7 +6,7 @@ import AboutCard2 from './AboutCard2';
 
 const About = () => {
   return (
-    <div id='About' className='py-20'>
+    <div id='About' className='py-10 md:py-20'>
     
     <h2 className='text-4xl font-extrabold text-gray-300 text-center mb-10 mt-16'>About</h2>
     

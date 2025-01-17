@@ -2,7 +2,7 @@ import React from 'react'
  import { Link } from 'react-router-dom'
  import { BsLinkedin,BsGithub,BsInstagram,BsFacebook } from 'react-icons/bs'
  import { Typewriter,Cursor } from 'react-simple-typewriter'
-import rinku from "/src/assets/images/r7.png" 
+import rinku from "/src/assets/images/profilePic3.png" 
 const Home = () => {
      
   return (
@@ -23,13 +23,13 @@ const Home = () => {
                    <a href="https://www.linkedin.com/in/rinku-dhurua-788199260/" target='_blank'><BsLinkedin className='h-8 w-8 ml-4 '/></a>  
                    <a href="https://github.com/Rdhurua" target='_blank'><BsGithub className='h-8 w-8 ml-4 '/></a>  
                    <a href="https://www.instagram.com/rdhurua_1118?igsh=YzljYTk1ODg3Zg==" target='_blank'><BsInstagram className='h-8 w-8 ml-4 '/></a>  
-                   <a href="#" target='_blank'><BsFacebook className='h-8 w-8 ml-4 '/></a>  
-                       
+                   <a href="https://drive.google.com/uc?export=download&id=1Abm_sSG-c1gu8VAyecfZUGVnXRvw-dpA" download="Rinku_CV.pdf"className="bg-orange-200 text-black px-4 py-2 ml-4 rounded-md hover:bg-orange-300 transition-all duration-200">Download CV</a>
+ 
                   </div>
          </div>
 
-         <div className=" lg:w-[40%] lg:h-[70%]  border-3xl border-white   ml-4 mt-8 md:ml-[160px]  lg:mx-0 lg:mb-40  ">
-        <img className="md:w-full md:h-full sm:w-[70%] sm:h-[70%] lg:w-[80%] lg:h-auto  object-cover shadow-md shadow-gray-300 " src={rinku}alt="Rinku" />
+         <div className=" lg:w-[40%] lg:h-[70%]  rounded-e-md px-3 mt-8 md:ml-[160px]  lg:mx-0 lg:mb-40  ">
+        <img className="md:w-full md:h-full sm:w-[70%] sm:h-[70%] lg:w-[80%] lg:h-auto  object-cover  shadow-sm shadow-gray-300 " src={rinku}alt="Rinku" />
       </div>
      </div>
     
