@@ -2,36 +2,57 @@ import React from 'react'
  import { Link } from 'react-router-dom'
  import { BsLinkedin,BsGithub,BsInstagram,BsFacebook } from 'react-icons/bs'
  import { Typewriter,Cursor } from 'react-simple-typewriter'
-import rinku from "/src/assets/images/profilePic3.png" 
+import rinku from "/src/assets/images/picture2.png" 
 const Home = () => {
      
   return (
     <>
-     <div className='sm:h-[160vh] md:h-[140vh] lg:h-[95vh] w-full  sm:flex sm:flex-column md:flex md:flex-wrap  lg:flex lg:flex-nowrap lg:justify-between lg:items-center   lg:px-16  py-12 ' id='home' >
-        <div className=' sm:w-full sm:h-[37%] md:w-full md:h-[42%] md:mr-8 md:pt-3 lg:w-1/2 lg:h-1/2  sm:ml-12 lg:mb-52 lg:mx-8 lg:py-10 px-8 '>
-       <div>
-        <h1 className=' md:text-4xl lg:text-5xl text-2xl text-gray-300 mb-2 font-mono font-bold'>Hello,Myself Rinku</h1>
-                 <h1 className=' md:text-4xl lg:text-5xl text-2xl text-gray-300 mt-2 mb-2 font-mono font-bold'> I am a passionate</h1>
-                 <h2> <span className='md:text-4xl lg:text-5xl text-2xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-700 via-orange-400 to-pink-500 mt-2'><Typewriter words={["Web-Developer","Problem-solver","Photo-editor"]} typeSpeed={100} loop /></span>
-                  <Cursor cursorBlinking="false"/>
-                 </h2>
-
-                 <p className='text-gray-50 md:text-xl sm:text-[15px] mt-3 text-justify font-sans'> <span>I am passionate about the software field,</span> where creativity meets logic. I love exploring new technologies and solving complex problems through coding. Constantly learning, I'm driven to build innovative solutions. My goal is to make a meaningful impact in the tech industry.</p>
+     <div
+      className="w-full min-h-screen flex flex-col lg:flex-row items-center justify-center px-6 sm:px-12 md:px-16 lg:px-20 py-12  gap-8"
+      id="home"
+    >
+      <div className="flex flex-col items-start text-center lg:text-left w-full lg:w-1/2 space-y-4 ">
+        <h1 className="text-2xl md:text-4xl lg:text-5xl text-gray-300 font-mono font-bold">
+          Hello,Myself Rinku
+        </h1>
+        <h1 className="text-2xl md:text-4xl lg:text-5xl text-gray-300 font-mono font-bold">
+          I am a passionate
+        </h1>
+        <h2 className="text-2xl md:text-4xl lg:text-5xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-700 via-orange-400 to-pink-500">
+          <Typewriter words={["Web Developer", "Problem Solver", "Photo Editor"]} typeSpeed={100} loop />
+          <Cursor cursorBlinking={false} />
+        </h2>
+        <p className="text-gray-50 text-sm md:text-lg text-justify font-sans leading-relaxed">
+          I am passionate about the software field, where creativity meets logic. I love exploring new technologies
+          and solving complex problems through coding. Constantly learning, I am driven to build innovative solutions.
+          My goal is to make a meaningful impact in the tech industry.
+        </p>
+        <div className="flex items-center space-x-4 text-orange-200">
+          <a href="https://www.linkedin.com/in/rinku-dhurua-788199260/" target="_blank" rel="noopener noreferrer">
+            <BsLinkedin className="h-8 w-8" />
+          </a>
+          <a href="https://github.com/Rdhurua" target="_blank" rel="noopener noreferrer">
+            <BsGithub className="h-8 w-8" />
+          </a>
+          <a href="https://www.instagram.com/rdhurua_1118?igsh=YzljYTk1ODg3Zg==" target="_blank" rel="noopener noreferrer">
+            <BsInstagram className="h-8 w-8" />
+          </a>
+          <a
+            href="https://drive.google.com/uc?export=download&id=1aGdKsEbsSxeA8xhIKMppZcsYB1I2Wd18"
+            download="Rinku_CV.pdf"
+            className="bg-orange-200 text-black px-4 py-2 rounded-md hover:bg-orange-300 transition-all duration-200"
+          >
+            Download CV
+          </a>
         </div>
-
-                  <div className='text-orange-200 flex  mt-8 w-full'>
-                   <a href="https://www.linkedin.com/in/rinku-dhurua-788199260/" target='_blank'><BsLinkedin className='h-8 w-8 ml-4 '/></a>  
-                   <a href="https://github.com/Rdhurua" target='_blank'><BsGithub className='h-8 w-8 ml-4 '/></a>  
-                   <a href="https://www.instagram.com/rdhurua_1118?igsh=YzljYTk1ODg3Zg==" target='_blank'><BsInstagram className='h-8 w-8 ml-4 '/></a>  
-                   <a href="https://drive.google.com/uc?export=download&id=1Abm_sSG-c1gu8VAyecfZUGVnXRvw-dpA" download="Rinku_CV.pdf"className="bg-orange-200 text-black px-4 py-2 ml-4 rounded-md hover:bg-orange-300 transition-all duration-200">Download CV</a>
- 
-                  </div>
-         </div>
-
-         <div className=" lg:w-[40%] lg:h-[70%]  rounded-e-md px-3 mt-8 md:ml-[160px]  lg:mx-0 lg:mb-40  ">
-        <img className="md:w-full md:h-full sm:w-[70%] sm:h-[70%] lg:w-[80%] lg:h-auto  object-cover  shadow-sm shadow-gray-300 " src={rinku}alt="Rinku" />
       </div>
-     </div>
+
+      <div className="w-full lg:w-1/2 flex justify-center">
+        <div className=" w-[80%] md:w-[60%] lg:w-auto rounded-xl overflow-hidden shadow-md shadow-gray-300">
+          <img src={rinku} alt="Rinku" className="w-full h-auto object-cover" />
+        </div>
+      </div>
+    </div>
     
     
     </>

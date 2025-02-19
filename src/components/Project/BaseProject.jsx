@@ -1,8 +1,6 @@
 import React from 'react'
  import Project from './Project'
  import project1 from "/src/assets/images/currency.png"
- import project3 from "/src/assets/images/dictionary .png"
-
  import project2 from "/src/assets/images/musicplayer.png"
  import project4 from "../../assets/images/skill-exchange.png"
  import project5 from "../../assets/images/agri.png"
