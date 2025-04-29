@@ -1,29 +1,27 @@
-import Navbar from "./components/Navbar/Navbar"
-import Home from "./components/Home/Home"
-import About from "./components/About/About.jsx"
-import BaseProject from "./components/Project/BaseProject"
-import Skills from "./components/skills/Skills.jsx"
-import Contact from "./components/Contact/Contact.jsx"
-import Footer from "./components/footer/Footer.jsx"
-import EmailForm from "/Mailnew.jsx"
 
+import Home from "./components/Home.jsx"
+import Loader from "./components/Loader.jsx"
+import { useState,useEffect } from "react"
 
 function App() {
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+    // Simulate loading
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000); // 2 seconds loading, or you can wait until assets load
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
 
     <>
-      < Navbar />
-      <Home />
-      <About/>
-      <Skills />
-      <BaseProject />
-      <Contact/>
-      <Footer/>
-      
-      
 
+     {loading? <Loader/>:<Home/>}
+    
+      
 
     </>
 

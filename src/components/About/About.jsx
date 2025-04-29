@@ -23,20 +23,20 @@ const About = () => {
         <div className="mt-6 lg:mt-14 w-full h-[1300px] lg:max-h-[1000px]  border-l-[6px] border-l-[#131928f1] border-opacity-30 flex flex-col gap-10">
           <AboutCard
             title="B.tech in Ceramic Engineering"
-            subTitle="National Institute of Technology ,Rourkela (2021 - 2025)"
-            result="6.86/10"
+            subTitle="National Institute of Technology ,Rourkela."
+            result="2021 - 2025"
             des="I'm a final-year Ceramic Engineering student with a strong passion for software development. My interest in the tech field drives me to explore and excel in software engineering."
           />
           <AboutCard
             title="Higher Secondary Education (Science)"
-            subTitle="Kalinga Institute of Social Sciences,Bhubaneswar (2019 - 2021)"
-            result="83.00%"
+            subTitle="Kalinga Institute of Social Sciences,Bhubaneswar."
+            result="2019 - 2021"
             des="Higher education, also known as post-secondary education, involves pursuing academic degrees beyond the secondary level. I had completed courses in Physics, Chemistry, Mathematics, and Biology (PCMB) as part of my education."
           />
           <AboutCard
             title="Secondary School Education"
-            subTitle="PanchaKhanda High School,Badabahal (2017 - 2019)"
-            result="84.00%"
+            subTitle="PanchaKhanda High School,Badabahal."
+            result="2017 - 2019"
             des="Secondary education, often referred to as post-primary education, is divided into two distinct phases. These stages are categorized according to the International Standard Classification of Education scale. This level of education typically follows primary schooling and precedes higher education."
           />
         </div>

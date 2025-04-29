@@ -3,7 +3,9 @@ import React from 'react'
  import { BsLinkedin,BsGithub,BsInstagram,BsFacebook } from 'react-icons/bs'
  import { Typewriter,Cursor } from 'react-simple-typewriter'
 import rinku from "/src/assets/images/picture2.png" 
-const Home = () => {
+import rinku2 from "/src/assets/images/picture3.png" 
+
+const Banner = () => {
      
   return (
     <>
@@ -38,7 +40,7 @@ const Home = () => {
             <BsInstagram className="h-8 w-8" />
           </a>
           <a
-            href="https://drive.google.com/uc?export=download&id=1aGdKsEbsSxeA8xhIKMppZcsYB1I2Wd18"
+            href="https://drive.google.com/uc?export=download&id=130qLnUDZ_lN_qpIndjMSkYbM9gFXXW7Y"
             download="Rinku_CV.pdf"
             className="bg-orange-200 text-black px-4 py-2 rounded-md hover:bg-orange-300 transition-all duration-200"
           >
@@ -48,8 +50,8 @@ const Home = () => {
       </div>
 
       <div className="w-full lg:w-1/2 flex justify-center">
-        <div className=" w-[80%] md:w-[60%] lg:w-auto rounded-xl overflow-hidden shadow-md shadow-gray-300">
-          <img src={rinku} alt="Rinku" className="w-full h-auto object-cover" />
+        <div className=" w-[80%] md:w-[60%] lg:w-[65%] rounded-xl overflow-hidden shadow-md shadow-gray-300">
+          <img src={rinku2} alt="Rinku" className="w-auto h-auto object-cover" />
         </div>
       </div>
     </div>
@@ -60,4 +62,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Banner;
