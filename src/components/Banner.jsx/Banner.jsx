@@ -8,7 +8,7 @@ const Banner = () => {
     <section
       id="home"
       className="w-full min-h-screen bg-gradient-to-br
-       from-gray-900 via-black to-gray-800 flex flex-col lg:flex-row items-center justify-center px-6 py-12 md:py-16 gap-12"
+       from-gray-900 via-black to-gray-800 flex flex-col lg:flex-row items-center justify-center px-6 py-10 md:py-16 gap-12"
     >
       <div className="w-full lg:w-1/2 flex flex-col justify-center items-start space-y-6 text-white">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">

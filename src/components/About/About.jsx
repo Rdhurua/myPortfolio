@@ -18,7 +18,7 @@ const About = () => {
           <h3 className="text-3xl font-bold text-white mb-6 border-b border-gray-700 pb-2 px-4">
             Education
           </h3>
-          <div className="border-l-4 border-[#21293cf1] border-opacity-30 pl-[0.8rem] space-y-10">
+          <div className="border-l-4 border-[#21293cf1] border-opacity-30 pl-[0.15rem] space-y-10">
             <AboutCard
               title="B.Tech in Ceramic Engineering"
               subTitle="National Institute of Technology, Rourkela"
@@ -45,7 +45,7 @@ const About = () => {
           <h3 className="text-3xl font-bold text-white mb-6 border-b border-gray-700 pb-2 px-4">
             Experience
           </h3>
-          <div className="border-l-4 border-[#21293cf1] border-opacity-30 pl-[0.8rem] space-y-10">
+          <div className="border-l-4 border-[#21293cf1] border-opacity-30 pl-[0.15rem] space-y-10">
             <AboutCard2
               title="Web Development Intern"
               subTitle="Kshitiksha Foundation (NGO)"
