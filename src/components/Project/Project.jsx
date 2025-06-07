@@ -5,9 +5,7 @@ import { BsGithub } from 'react-icons/bs'
 
   
 const Project = ({title,des,project,Url,github}) => {
-  //  let title="project k is here";
-  //   let des="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic facilis quidem natus voluptate ipsa officia minima eaque, sed facere architecto impedit. Ipsa nobis blanditiis illum. Facere natus repellat sed voluptas! tex";
-  //   let src="https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?cs=srgb&dl=pexels-fotios-photos-1107717.jpg&fm=jpg"
+ 
   return (
    
 

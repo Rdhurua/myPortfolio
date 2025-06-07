@@ -9,6 +9,7 @@ const Contact = () => {
     const [email, setEmail] = useState("");
     const [result1, setResult1] = useState(null);
     const [Rdata, setRdata] = useState(null);
+    const [loader,setLoader]=useState(false);
     const form = useRef();
 
     const validateEmail = (email) => {
@@ -28,7 +29,8 @@ const Contact = () => {
 
     const onSubmit = async (e) => {
         e.preventDefault();
-        emailjs.sendForm("service_758wpga", import.meta.env.VITE_TEMPLATE_ID, form.current, {
+        setLoader(true);
+        emailjs.sendForm(import.meta.env.VITE_SERVICE_KEY, import.meta.env.VITE_TEMPLATE_ID, form.current, {
             publicKey: import.meta.env.VITE_PUBLIC_KEY,
         })
             .then(
@@ -37,9 +39,11 @@ const Contact = () => {
                     e.target.reset();
 
                     setResult1("");
+                    setLoader(false);
                 },
                 (error) => {
                     console.log('FAILED...', error.text);
+                    setLoader(false);
                 },
             );
     };
@@ -103,9 +107,9 @@ const Contact = () => {
                     </div>
                     <button
                         type="submit"
-                        className="py-3 px-5 md:px-40 md:ml-[4.75rem] text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                        className="py-3 px-5 md:px-40 md:ml-[4.75rem] text-lg font-semibold text-center  rounded-lg bg-blue-500 hover:bg-blue-600 text-white sm:w-fit focus:outline-none"
                     >
-                        Send message
+                        {loader ? "Sending..." : "Send message"}
                     </button>
                 </form>
             </div>

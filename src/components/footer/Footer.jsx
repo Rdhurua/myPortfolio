@@ -1,6 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 const Footer = () => {
+   const currentYear = new Date().getFullYear();
   return (
     <>
     
@@ -15,7 +16,7 @@ const Footer = () => {
                 >
                 </motion.span>
               </span>
-        <h2 className='text-center mt-2 py-2'>&#169;2024.All rights reserved by Rinku Dhurua</h2>
+        <h2 className='text-center mt-2 py-2'>&#169;{currentYear}.All rights reserved by Rinku Dhurua</h2>
     </div>
     </>
   )
