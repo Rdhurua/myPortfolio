@@ -6,8 +6,15 @@ import React from 'react'
  import project5 from "../../assets/images/agri.png"
  import project7 from "../../assets/images/project-c.png"
  import project6 from "../../assets/images/project-crypto.png"
-
+ import project8 from "../../assets/images/url-shortner.png"
 const projects = [
+  {
+  title: "URL Shortener",
+  des: "A full-stack application for converting long URLs into short, shareable links with instant response. Includes an admin panel for managing and deleting URLs, JWT-based authentication for secure admin access, and a modern, responsive UI built with Tailwind CSS. Backend powered by Express, MongoDB, and Mongoose with secure API endpoints.",
+  project: project8, 
+  Url: "https://url-shortner-rinkudhurua.netlify.app/",
+  github: "https://github.com/Rdhurua/URL_shortner",
+},
   {
     title: "Crypto Trading Dashboard",
     des: "A mini-project simulating cryptocurrency trading with real-time market data, interactive charts, buy/sell trade simulation, portfolio tracking, and profit/loss calculations. Built for financial domain alignment with responsive UI and Chart.js integration.",
@@ -43,13 +50,13 @@ const projects = [
     Url: "https://currencyconverter-rinku-world.netlify.app/",
     github: "https://github.com/Rdhurua/Currency-converter",
   },
-  {
-    title: "Music-Player",
-    des: "This music player website provides a modern and responsive interface, allowing users to effortlessly control playback and navigate through tracks while enjoying a visually captivating design optimized for all devices.",
-    project: project2,
-    Url: "https://rd-music-playlist.netlify.app/",
-    github: "https://github.com/Rdhurua/My-music-player",
-  },
+  // {
+  //   title: "Music-Player",
+  //   des: "This music player website provides a modern and responsive interface, allowing users to effortlessly control playback and navigate through tracks while enjoying a visually captivating design optimized for all devices.",
+  //   project: project2,
+  //   Url: "https://rd-music-playlist.netlify.app/",
+  //   github: "https://github.com/Rdhurua/My-music-player",
+  // },
 ];
 
 

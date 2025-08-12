@@ -28,7 +28,7 @@ const Banner = () => {
         </p>
 
         <div className="flex items-center flex-wrap gap-5 mt-4">
-          <a href="https://www.linkedin.com/in/rinku-dhurua-788199260/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+          <a href="https://www.linkedin.com/in/rinku-dhurua/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
             <BsLinkedin className="text-2xl hover:text-blue-500 transition-all duration-200" />
           </a>
           <a href="https://github.com/Rdhurua" target="_blank" rel="noopener noreferrer" title="GitHub">
