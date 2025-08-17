@@ -39,7 +39,7 @@ const Banner = () => {
           </a>
 
           <a
-            href="https://drive.google.com/uc?export=download&id=130qLnUDZ_lN_qpIndjMSkYbM9gFXXW7Y"
+            href="https://drive.google.com/uc?export=download&id=1pZHRyjODcFjaEZ2KUsae0-NueNSm_ZSs"
             download="Rinku_CV.pdf"
             className="bg-orange-400 hover:bg-orange-500 text-black px-5 py-2 rounded-full font-medium transition-all duration-200"
           >
