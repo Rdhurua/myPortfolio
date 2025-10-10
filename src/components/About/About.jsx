@@ -31,12 +31,12 @@ const About = () => {
               result="2019 - 2021"
               des="Completed courses in Physics, Chemistry, Mathematics, and Biology (PCMB)."
             />
-            <AboutCard
+            {/* <AboutCard
               title="Secondary School Education"
               subTitle="Panchakhanda High School, Badabahal"
               result="2017 - 2019"
               des="Gained strong academic discipline and foundation for higher education."
-            />
+            /> */}
           </div>
         </div>
 
