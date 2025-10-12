@@ -23,7 +23,7 @@ const About = () => {
               title="B.Tech in Ceramic Engineering"
               subTitle="National Institute of Technology, Rourkela"
               result="2021 - 2025"
-              des="I'm a final-year Ceramic Engineering student with a strong passion for software development. My interest in the tech field drives me to explore and excel in software engineering."
+              des="I'm a B.Tech graduate in Ceramic Engineering with a strong passion for software development and a drive to excel in the tech field."
             />
             <AboutCard
               title="Higher Secondary Education (Science)"
