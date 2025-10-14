@@ -1,34 +1,28 @@
 import React from 'react'
  import Project from './Project'
- import project1 from "/src/assets/images/currency.png"
- import project2 from "/src/assets/images/musicplayer.png"
  import project4 from "../../assets/images/skill-exchange.png"
  import project5 from "../../assets/images/agri.png"
- import project7 from "../../assets/images/project-c.png"
- import project6 from "../../assets/images/project-crypto.png"
+
  import project8 from "../../assets/images/url-shortner.png"
+ import project9 from "../../assets/images/brieflink.png"
+
+import Slider from 'react-slick'
 const projects = [
   {
+  title: "BriefLink-AI summarizer",
+  des: "An AI-powered web application that generates concise summaries from lengthy documents or transcripts using the Groq API. Built with Next.js and TypeScript, featuring a secure shareable-link system for time-limited access, JWT-based authentication, and a responsive Tailwind CSS interface. Backend powered by MongoDB (Mongoose) for storing summaries and access metadata."
+,
+  project: project9, 
+  Url: "https://brief-link-six.vercel.app/",
+  github: "https://github.com/Rdhurua/BriefLink",
+},
+   {
   title: "URL Shortener",
   des: "A full-stack application for converting long URLs into short, shareable links with instant response. Includes an admin panel for managing and deleting URLs, JWT-based authentication for secure admin access, and a modern, responsive UI built with Tailwind CSS. Backend powered by Express, MongoDB, and Mongoose with secure API endpoints.",
   project: project8, 
   Url: "https://url-shortner-rinkudhurua.netlify.app/",
   github: "https://github.com/Rdhurua/URL_shortner",
 },
-  {
-    title: "Crypto Trading Dashboard",
-    des: "A mini-project simulating cryptocurrency trading with real-time market data, interactive charts, buy/sell trade simulation, portfolio tracking, and profit/loss calculations. Built for financial domain alignment with responsive UI and Chart.js integration.",
-    project: project6,
-    Url: "https://crypto-mock-vert.vercel.app/",
-    github: "https://github.com/Rdhurua/cryptoMock",
-  },
-  {
-    title: "Code Complexity Analyzer",
-    des: "A real-time web application that analyzes time and space complexity of code in Python, JavaScript, C++, and Java. Features include GPT-powered optimization suggestions, user authentication, session-based history, and a clean UI/UX for students and developers to understand code performance intuitively.",
-    project: project7,
-    Url: "https://code-metric-pi.vercel.app/",
-    github: "https://github.com/Rdhurua/codeMetric",
-  },
   {
     title: "Skill-exchanger",
     des: "A platform designed to foster community growth by enabling users to share and learn skills. Users can match based on their interests, connect, and communicate through real-time chat. An admin dashboard ensures efficient management, promoting collaboration and skill development within communities.",
@@ -43,52 +37,58 @@ const projects = [
     Url: "https://agricultural-universe.netlify.app/",
     github: "https://github.com/Rdhurua/Agriculture",
   },
-  {
-    title: "Currency-Converter",
-    des: "I developed a responsive currency converter website that allows users to easily convert between multiple currencies in real-time, using up-to-date exchange rates. The project includes a clean and intuitive interface with a focus on user experience.",
-    project: project1,
-    Url: "https://currencyconverter-rinku-world.netlify.app/",
-    github: "https://github.com/Rdhurua/Currency-converter",
-  },
-  // {
-  //   title: "Music-Player",
-  //   des: "This music player website provides a modern and responsive interface, allowing users to effortlessly control playback and navigate through tracks while enjoying a visually captivating design optimized for all devices.",
-  //   project: project2,
-  //   Url: "https://rd-music-playlist.netlify.app/",
-  //   github: "https://github.com/Rdhurua/My-music-player",
-  // },
+   
+  
 ];
 
 
 const BaseProject = () => {
+
+   const settings = {
+    dots: true,
+    infinite: true,
+    speed: 600,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    cssEase: "ease-in-out",
+    responsive: [
+      { breakpoint: 1280, settings: { slidesToShow: 2 } },
+      { breakpoint: 768, settings: { slidesToShow: 1 } },
+    ],
+  };
+
+
+
   return (
     <section
-    id="project"
-    className="w-full pt-20 border-b-[1px] border-b-black"
-  >
-    <div className="flex justify-center items-center text-center">
-        <h1 className='text-4xl  font-extrabold text-gray-300 '>Projects</h1>
-      
-    </div>
-    <div className="flex justify-center items-center text-center">
-        
-        <p className='text-2xl  font-semibold text-gray-100 mb-20 mt-3'>following are my projects</p>
-    </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-10 px-4 lg:px-16">
+      id="project"
+      className="w-full pt-20 border-b border-black"
+    >
+      <div className="text-center mb-10">
+        <h1 className="text-4xl font-extrabold text-gray-300">Projects</h1>
+        <p className="text-2xl font-semibold text-gray-100 mt-3">
+          following are my projects
+        </p>
+      </div>
 
-  {projects.map((proj, index) => (
-  <Project
-    key={index}
-    title={proj.title}
-    des={proj.des}
-    project={proj.project}
-    Url={proj.Url}
-    github={proj.github}
-  />
-))}
-      
-    </div>
-  </section>
+      <div className="px-4 lg:px-16">
+        <Slider {...settings}>
+          {projects.map((proj, index) => (
+            <div key={index} className="p-4">
+              <Project
+                title={proj.title}
+                des={proj.des}
+                project={proj.project}
+                Url={proj.Url}
+                github={proj.github}
+              />
+            </div>
+          ))}
+        </Slider>
+      </div>
+    </section>
   )
 }
 
