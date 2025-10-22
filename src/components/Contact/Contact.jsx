@@ -107,7 +107,7 @@ const Contact = () => {
                     </div>
                     <button
                         type="submit"
-                        className="py-3 px-5 md:px-40 ml-[6rem] md:ml-[4.75rem] text-lg font-semibold text-center  rounded-lg bg-blue-500 hover:bg-blue-600 text-white sm:w-fit focus:outline-none"
+                        className="py-3 px-5 md:px-40 ml-[6rem] md:ml-[4.75rem] text-lg font-semibold text-center  rounded-lg bg-gradient-to-r from-orange-400 to-pink-500 hover:from-orange-500 hover:to-pink-600 text-black px-5 py-2 rounded-full font-medium transition-all duration-300 hover:scale-105 sm:w-fit focus:outline-none"
                     >
                         {loader ? "Sending..." : "Send message"}
                     </button>

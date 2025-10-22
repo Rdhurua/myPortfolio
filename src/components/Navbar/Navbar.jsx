@@ -40,12 +40,12 @@ export default function Navbar() {
         {/* Menu */}
         <div className={`w-full md:w-auto ${isOpen ? "block" : "hidden"} md:block`} id="navbar-default">
           <ul className="font-medium flex flex-col md:flex-row p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 md:border-0 rounded-lg bg-gray-50 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700 md:space-x-8">
-            {["home", "About", "Skills", "project", "contact"].map((section) => (
+            {["home", "about", "Skills", "project", "contact"].map((section) => (
               <li key={section}>
                 <a
                   href={`#${section}`}
                   onClick={closeMenu}
-                  className="block py-2 px-3 text-md md:text-lg text-gray-900 dark:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:hover:text-blue-400 dark:hover:bg-gray-700 md:dark:hover:bg-transparent transition-all"
+                  className="block py-2 px-3 text-md md:text-lg text-gray-900 dark:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#58E095] md:p-0 dark:hover:text-[#58E095] dark:hover:bg-gray-700 md:dark:hover:bg-transparent transition-all"
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </a>
