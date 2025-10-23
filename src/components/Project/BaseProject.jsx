@@ -7,7 +7,7 @@ import project9 from "../../assets/images/brieflink.png";
 
 const projects = [
   {
-    title: "BriefLink-AI summarizer",
+    title: "BriefLink",
     des: "An AI-powered web application that generates concise summaries from lengthy documents or transcripts using the Groq API. Built with Next.js and TypeScript, featuring a secure shareable-link system for time-limited access, JWT-based authentication, and a responsive Tailwind CSS interface. Backend powered by MongoDB (Mongoose) for storing summaries and access metadata.",
     project: project9,
     Url: "https://brief-link-six.vercel.app/",

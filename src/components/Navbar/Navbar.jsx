@@ -8,7 +8,7 @@ export default function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className="w-[] bg-white dark:bg-gray-900 sticky top-0 z-50 shadow-sm shadow-white">
+    <nav className="w-full bg-white dark:bg-gray-900 sticky top-0 z-50 shadow-sm shadow-white">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-3">
