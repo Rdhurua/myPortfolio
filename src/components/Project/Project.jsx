@@ -1,7 +1,6 @@
 import React from 'react'
 import { BsGithub } from 'react-icons/bs'
- import {FaGlobe} from 'react-icons/fa'
- import project2 from "/src/assets/images/musicplayer.png"
+import {FaGlobe} from 'react-icons/fa'
 
   
 const Project = ({title,des,project,Url,github}) => {

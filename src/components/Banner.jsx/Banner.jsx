@@ -5,7 +5,7 @@ const Banner = () => {
   return (
  <section
   id="home"
-  className="w-full min-h-[80vh] flex items-center justify-center text-white bg-transparent overflow-hidden"
+  className="w-full min-h-[60vh] md:h-[85vh] flex items-center justify-center text-white bg-transparent overflow-hidden"
 >
   <div className="max-w-6xl w-full flex flex-col justify-center items-center sm:items-start text-center sm:text-left px-6 sm:px-10 md:px-16 space-y-4 sm:space-y-6 mx-auto">
     <h1 className="text-xl sm:text-3xl md:text-4xl font-bold">

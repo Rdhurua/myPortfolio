@@ -1,24 +1,29 @@
 import React from "react";
 import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
-import rinku2 from "/src/assets/images/pic-9.png";
+import rinku2 from "/src/assets/images/rinku-p.jpg";
 import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <section
       id="about"
-      className="w-full bg-gradient-to-br from-gray-900 via-black to-gray-800 py-16 px-6 sm:px-10 md:px-16 lg:px-20 text-white flex flex-col-reverse lg:flex-row items-center justify-between gap-12 "
+      className="w-full bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white py-10"
     >
-      {/* Left Section - Text */}
+      {/* Left  
+      Section - Text */}
+       <h2 className="text-4xl sm:text-5xl font-extrabold mb-4  text-gray-300 text-center  ">
+          About Me
+        </h2>
+
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 py-12 px-6 sm:px-10 md:px-16 lg:px-20 ">
+
       <motion.div
         initial={{ opacity: 0, x: -40 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
         className="flex-1 flex flex-col space-y-6 text-center lg:text-left"
       >
-        <h2 className="text-4xl sm:text-5xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-400 to-cyan-500">
-          About Me
-        </h2>
+       
 
         <p className="text-gray-300 text-base sm:text-lg md:text-xl leading-relaxed tracking-wide">
           I’m deeply passionate about the software field — where creativity meets logic.
@@ -76,15 +81,16 @@ const About = () => {
         transition={{ duration: 0.8 }}
         className="flex-1 flex justify-center items-center"
       >
-        <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-gray-600 shadow-[0_0_30px_rgba(255,255,255,0.1)] hover:scale-105 transition-transform duration-500">
+        <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden  shadow-lg ">
           <img
             src={rinku2}
             alt="Rinku Dhurua"
-            className="w-full h-full object-cover rounded-full"
+            className="w-full h-full object-cover "
           />
-          <div className="absolute inset-0 rounded-full bg-white/5 blur-3xl" />
+          {/* <div className="absolute inset-0 rounded-full bg-white/5 blur-3xl" /> */}
         </div>
       </motion.div>
+      </div>
     </section>
   );
 };

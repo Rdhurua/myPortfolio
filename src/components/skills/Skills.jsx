@@ -58,7 +58,7 @@ const Skills = () => {
       <h1 className="text-4xl font-extrabold text-gray-200 text-center mb-12">Skills</h1>
 
       {/* Frontend + Backend Section */}
-      <div className="flex flex-col md:flex-row justify-center items-start gap-10 px-6 md:px-12">
+      <div className="flex flex-col lg:flex-row justify-center items-start gap-10 px-6 md:px-12">
 
         {/* Frontend Section */}
         <section className="flex-1 bg-[#001845]/30 rounded-2xl shadow-lg p-6">

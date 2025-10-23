@@ -8,7 +8,7 @@ export default function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className="bg-white dark:bg-gray-900 sticky top-0 z-50 shadow-sm shadow-white">
+    <nav className="w-[] bg-white dark:bg-gray-900 sticky top-0 z-50 shadow-sm shadow-white">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-3">
@@ -40,7 +40,7 @@ export default function Navbar() {
         {/* Menu */}
         <div className={`w-full md:w-auto ${isOpen ? "block" : "hidden"} md:block`} id="navbar-default">
           <ul className="font-medium flex flex-col md:flex-row p-4 md:p-0 mt-4 md:mt-0 border border-gray-100 md:border-0 rounded-lg bg-gray-50 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700 md:space-x-8">
-            {["home", "about", "Skills", "project", "contact"].map((section) => (
+            {["home", "Skills", "project", "contact"].map((section) => (
               <li key={section}>
                 <a
                   href={`#${section}`}
