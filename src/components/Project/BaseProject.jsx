@@ -8,32 +8,32 @@ import project9 from "../../assets/images/brieflink.png";
 const projects = [
   {
     title: "BriefLink",
-    des: "An AI-powered web application that generates concise summaries from lengthy documents or transcripts using the Groq API. Built with Next.js and TypeScript, featuring a secure shareable-link system for time-limited access, JWT-based authentication, and a responsive Tailwind CSS interface. Backend powered by MongoDB (Mongoose) for storing summaries and access metadata.",
+    des: "A web application that uses AI to generate concise summaries from long documents or transcripts.It also provides secure, time-limited shareable links for controlled access to the summaries.",
     project: project9,
     Url: "https://brief-link-six.vercel.app/",
     github: "https://github.com/Rdhurua/BriefLink",
   },
   {
     title: "URL Shortener",
-    des: "A full-stack application for converting long URLs into short, shareable links with instant response. Includes an admin panel for managing and deleting URLs, JWT-based authentication for secure admin access, and a modern, responsive UI built with Tailwind CSS. Backend powered by Express, MongoDB, and Mongoose with secure API endpoints.",
+    des: "A full-stack app that converts long URLs into short, shareable links with instant results. It includes an admin panel for managing links and secure access for authorized users.",
     project: project8,
     Url: "https://url-shortner-rinkudhurua.netlify.app/",
     github: "https://github.com/Rdhurua/URL_shortner",
   },
   {
     title: "Skill-exchanger",
-    des: "A platform designed to foster community growth by enabling users to share and learn skills. Users can match based on their interests, connect, and communicate through real-time chat. An admin dashboard ensures efficient management, promoting collaboration and skill development within communities.",
+    des: "A platform that helps people share and learn skills by matching users based on their interests.It supports real-time chat and includes an admin dashboard to manage community interactions and growth.",
     project: project4,
     Url: "https://skill-exchanged.netlify.app/",
     github: "https://github.com/Rdhurua/Skill-exchanged",
   },
-  {
-    title: "Agriculture Universe",
-    des: "I developed an interactive agriculture website to support farmers and promote sustainable farming practices. The platform includes features like a dynamic gallery, real-time weather updates, and a blog for sharing modern agricultural techniques. It aims to connect communities and foster growth in the agricultural sector.",
-    project: project5,
-    Url: "https://agricultural-universe.netlify.app/",
-    github: "https://github.com/Rdhurua/Agriculture",
-  },
+  // {
+  //   title: "Agriculture Universe",
+  //   des: "A website designed to support farmers and promote sustainable farming practices.It provides weather updates, a knowledge-sharing blog, and resources to help connect and grow agricultural communities.",
+  //   project: project5,
+  //   Url: "https://agricultural-universe.netlify.app/",
+  //   github: "https://github.com/Rdhurua/Agriculture",
+  // },
 ];
 
 const BaseProject = () => {

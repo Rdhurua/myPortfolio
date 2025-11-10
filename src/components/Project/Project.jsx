@@ -8,7 +8,7 @@ const Project = ({title,des,project,Url,github}) => {
   return (
    
 
-  <div className="w-full p-4 sm:p-6 md:p-8 xl:px-12 h-auto xl:py-10 rounded-lg shadow-lg hover:shadow-lime-100 flex flex-col shadow-[#131928f1] bg-[#000718f1] group hover:bg-gradient-to-b hover:from-gray-900 hover:to-gray-900 transition-all duration-700 text-gray-400">
+  <div className="w-full p-4 sm:p-6 md:p-8 xl:px-12 h-auto xl:py-10 rounded-lg shadow-md hover:shadow-lime-100 flex flex-col shadow-[#131928f1] bg-[#000718f1]  hover:from-gray-900 hover:to-gray-900 transition-all duration-700 text-gray-400">
 
   {/* Project Image */}
   <div className="w-full h-48 sm:h-56 md:h-60 lg:h-64 overflow-hidden rounded-lg">
@@ -24,7 +24,7 @@ const Project = ({title,des,project,Url,github}) => {
     <div>
       {/* Title + Icons */}
       <div className="flex flex-wrap items-center justify-between gap-3">
-        <h3 className="text-base sm:text-lg md:text-lg uppercase text-designColor font-semibold">
+        <h3 className="text-base sm:text-md lg:text-lg uppercase text-designColor font-semibold">
           {title}
         </h3>
         <div className="flex gap-2 sm:gap-3">
@@ -48,7 +48,7 @@ const Project = ({title,des,project,Url,github}) => {
       </div>
 
       {/* Description */}
-      <p className="text-sm sm:text-base text-justify tracking-wide mt-3 hover:text-gray-100 transition-colors duration-300">
+      <p className="text-sm sm:text-base text-justify  mt-3 hover:text-gray-100 transition-colors duration-300">
         {des}
       </p>
     </div>

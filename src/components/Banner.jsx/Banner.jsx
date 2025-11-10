@@ -9,7 +9,7 @@ const Banner = () => {
 >
   <div className="max-w-6xl w-full flex flex-col justify-center items-center sm:items-start text-center sm:text-left px-6 sm:px-10 md:px-16 space-y-4 sm:space-y-6 mx-auto">
     <h1 className="text-xl sm:text-3xl md:text-4xl font-bold">
-      Hey there!, I'm
+      Hey there,I'm
     </h1>
 
     <span className="text-3xl sm:text-5xl md:text-6xl lg:text-[5rem] font-bold text-[#0EC95C]">
