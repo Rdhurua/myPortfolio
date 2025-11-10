@@ -54,24 +54,24 @@ const Contact = () => {
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-sm shadow-md shadow-gray-200 rounded-md">
                 <form ref={form} onSubmit={onSubmit} className="space-y-8">
                     <div>
-                        <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your Name</label>
+                        <label htmlFor="name" className="block mb-2 text-sm font-medium  text-gray-300">Your Name</label>
                         <input
                             type="text"
                             id="name"
                             name="name"
-                            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-11/12 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            className="shadow-sm  border border-gray-300  text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-11/12 p-2.5 bg-gray-700 border-gray-600 dark:placeholder-gray-400 text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
                             placeholder="Enter your Name"
                             required
                         />
                     </div>
 
                     <div>
-                        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+                        <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-300">Your email</label>
                         <input
                             type="email"
                             id="email"
                             name="email"
-                            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-11/12 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+                            className="shadow-sm  border   text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-11/12 p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
                             placeholder="Enter your Email"
                             onChange={onEmailChange}
                             required
@@ -101,10 +101,13 @@ const Contact = () => {
                             id="message"
                             rows="6"
                             name="message"
-                            className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                            className="block p-2.5 w-full text-sm  rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                             placeholder="Leave your message..." required
                         ></textarea>
                     </div>
+
+
+                    
                     <button
                         type="submit"
                         className="py-3 px-5 md:px-40 ml-[6rem] md:ml-[4.75rem] text-lg font-semibold text-center  rounded-lg bg-gradient-to-r from-orange-400 to-pink-500 hover:from-orange-500 hover:to-pink-600 text-black px-5 py-2 rounded-full font-medium transition-all duration-300 hover:scale-105 sm:w-fit focus:outline-none"

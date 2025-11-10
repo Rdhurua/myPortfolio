@@ -8,7 +8,7 @@ export default function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className="w-full bg-white dark:bg-gray-900 sticky top-0 z-50 shadow-sm shadow-white">
+    <nav className="w-full bg-gray-900 sticky top-0 z-50 shadow-sm shadow-white">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         {/* Logo */}
         <a href="/" className="flex items-center space-x-3">
@@ -45,7 +45,7 @@ export default function Navbar() {
                 <a
                   href={`#${section}`}
                   onClick={closeMenu}
-                  className="block py-2 px-3 text-md md:text-lg text-gray-900 dark:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#58E095] md:p-0 dark:hover:text-[#58E095] dark:hover:bg-gray-700 md:dark:hover:bg-transparent transition-all"
+                  className="block py-2 px-3 text-md md:text-lg text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-[#58E095] md:p-0 dark:hover:text-[#58E095] dark:hover:bg-gray-700 md:dark:hover:bg-transparent transition-all"
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </a>
